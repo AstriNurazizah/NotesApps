@@ -2,21 +2,21 @@
   --primary: #BB86FC;
   --primary-variant: #3700B3;
   --secondary: #03DAC6;
-  --background: #727070;
+  --background: #948979;
   --surface: #121212;
   --error: #CF6679;
   --warning: #F39C12;
-  --on-background: #FFFFFF;
-  --on-background-grey: #c7c7c7;
-  --on-surface: #FFFFFF;
+  --on-background: #153448;
+  --on-background-grey: #153448;
+  --on-surface: #153448;
 }
 
 [data-theme="light"] {
-  --background: #DDDDDD;
-  --suface: #FFFFFF;
-  --on-background: #333333;
-  --on-background-grey: #6d6d6d;
-  --on-surface: #333333;
+  --background: #153448;
+  --suface: #948979;
+  --on-background: #948979;
+  --on-background-grey: #948979;
+  --on-surface: #948979;
 }
 
 * {
@@ -209,8 +209,8 @@ main {
   width: 50px;
   height: 50px;
   border-radius: 50px;
-  background-color: #d8d8d8;
-  color: #363536;
+  background-color: #153448;
+  color: #948979;
   padding: 8px;
   cursor: pointer;
 }
@@ -264,7 +264,7 @@ main {
   background-color: transparent;
   margin-bottom: 50px;
   display: block;
-  width: 15%;
+  width: 80%;
   padding: 12px;
   border-radius: 8px;
   border: 1px solid var(--on-background);
@@ -293,6 +293,7 @@ main {
     margin-left: auto;
     margin-right: auto;
 }
+
 
 
 @media screen and (min-width: 650px) {
