@@ -5,7 +5,7 @@ import {FiPlusCircle } from 'react-icons/fi';
  
 function Add() {
   return (
-      <ul className='item'>
+      <ul className=''>
         <li><Link to="/add"><FiPlusCircle/></Link></li>
       </ul>
   );

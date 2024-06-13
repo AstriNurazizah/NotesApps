@@ -1,3 +1,7 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 :root {
   --primary: #BB86FC;
   --primary-variant: #3700B3;
@@ -25,117 +29,18 @@
   box-sizing: border-box;
 }
 
-a {
-  color: var(--on-background);
-}
-
-
 body {
   font-family: 'Inter', sans-serif;
   color: var(--on-background);
   background-color: var(--background);
   
 }
-
-.app-container {
-
-  min-height: 100vh;
-  transition: all ease-in-out 0.5s;
-}
-
-
-
-header {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  padding: 16px;
-  border-bottom: 1px solid var(--on-background);
-}
-
-header h1 {
-  flex: 1;
-}
-
-header .navigation ul li {
-  display: inline-block;
-  font-size: 30px;
-  margin: 0 8px;
-}
-
 main {
   margin: 0 auto;
   padding: 32px 0;
   width: 90%;
   max-width: 1200px;
 }
-
-.login-page, .register-page{
-  border: 1px solid var(--on-surface);
-  outline: none;
-  border-radius: 0.4rem;
-  padding: 0.7rem 1rem;
-  font-weight: 200;
-}
-
-.log, .regis{
-  text-align: center;
-  padding: 20px ;
-}
-
-.login-input, .register-input{
-  border: 1px solid var(--on-surface);
-  outline: none;
-  border-radius: 0.4rem;
-  padding: 0.7rem 1rem;
-  font-weight: 500;
-}
-
-.email, .password, .text{
-  font-size: 18px;
-  margin-top: 8px;
-  background-color: transparent;
-  margin-bottom: 50px;
-  display: block;
-  width: 45%;
-  padding: 8px;
-  border-radius: 8px;
-  border: 1px solid var(--on-background);
-  margin: 40px auto;
-}
-
-.email::placeholder , .password::placeholder, .text::placeholder{
-  color: var(--on-background-grey);
-  text-align: center;
-} 
-
-.login, .regist {
-  font-size: 15px;
-  margin-top: 8px;
-  background-color: transparent;
-  margin-bottom: 50px;
-  display: block;
-  width: 15%;
-  padding: 12px;
-  border-radius: 8px;
-  border: 1px solid var(--on-background);
-  margin: 40px auto;
-  color: var(--on-background);
-}
-
-.login-page p , .register-page p{
-  text-align: center;
-  margin: 20px auto;
-}
-
-.notes-list {
-  margin-top: 32px;
-  display: grid;
-  grid-template-columns: 1fr;
-  gap: 16px;
-  padding: 16px 8px;
-}
-
 .list-empty {
   margin-top: 32px;
   padding: 16px 8px;
@@ -158,135 +63,6 @@ main {
   margin: 4px 0;
 }
 
-.item-createdAt {
-  color: var(--on-background-grey);
-  font-size: 14px;
-  margin: 4px 0;
-}
-
-.item-body {
-  margin-top: 16px;
-  overflow: hidden;
-  display: -webkit-box;
-  text-overflow: ellipsis;
-  -webkit-line-clamp: 6;
-  -webkit-box-orient: vertical;
-}
-
-.detail-page {
-  margin: 0 auto;
-  margin-top: 32px; 
-  width: 90%;
-}
-
-.detail-page-title {
-  font-size: 48px;
-  margin-bottom: 8px;
-  word-wrap: break-word;
-}
-
-.detail-page-createdAt {
-  color: var(--on-background-grey)
-}
-
-.detail-page-body {
-  line-height: 1.5;
-  margin-top: 36px;
-  font-size: 18px;
-}
-.note-item-action{
-  display: flex;
-  padding: 20px 20px;
-    margin-top: 10px;
-}
-
-.item-delete, .item-archive {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-size: 32px;
-  border: 0;
-  width: 50px;
-  height: 50px;
-  border-radius: 50px;
-  background-color: #153448;
-  color: #948979;
-  padding: 8px;
-  cursor: pointer;
-}
-
-.note-input {
-  border: 1px solid var(--on-surface);
-  outline: none;
-  border-radius: 0.4rem;
-  padding: 0.7rem 1rem;
-  font-weight: 500;
- 
-}
-
-.note-input-title {
-  font-size: 18px;
-  margin-top: 8px;
-  background-color: transparent;
-  margin-bottom: 50px;
-  display: block;
-  width: 80%;
-  padding: 8px;
-  border-radius: 8px;
-  border: 1px solid var(--on-background);
-  margin: 40px auto;
-  
-}
-.note-input-title::placeholder {
-  color: var(--on-background-grey);
-}
-
-.note-input-body {
-  font-size: 18px;
-  margin-top: 8px;
-  background-color: transparent;
-  margin-bottom: 50px;
-  display: block;
-  width: 80%;
-  padding: 8px;
-  border-radius: 8px;
-  border: 1px solid var(--on-background);
-  margin: 40px auto;
-}
-
-.note-input-body::placeholder {
-  color: var(--on-background-grey);
-}
-
-.note-input button {
-  font-size: 15px;
-  margin-top: 8px;
-  background-color: transparent;
-  margin-bottom: 50px;
-  display: block;
-  width: 80%;
-  padding: 12px;
-  border-radius: 8px;
-  border: 1px solid var(--on-background);
-  margin: 40px auto;
-  color: var(--on-background);
-}
-
-
-.search-bar input {
-  margin: 16px 0;
-  font-family: 'Inter', sans-serif;
-  background-color: transparent;
-  border: 1px solid var(--on-background);
-  border-radius: 4px;
-  padding: 8px;
-  width: 100%;
-  color: var(--on-background);
-}
-
-.search-bar input::placeholder {
-  color: var(--on-background-grey);
-}
 
 .ing {
     display: block;
@@ -323,22 +99,6 @@ main {
   }
 }
 
-@media only screen and (max-width: 565px) {
-  .nav-link{
-    display: flex;
-    flex-direction: column;
-  }
-
-  header .navigation ul li {
-    margin: 8px;
-    text-align: center;
-  }
-
-  header .navigation ul li a {
-    padding: 3px;
-  }
-
   .note-input__title{
     font-size: 36px;
   }
-}

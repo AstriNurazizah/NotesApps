@@ -6,17 +6,17 @@ import { showFormattedDate } from '../utils/index';
 function NoteDetail({ title, createdAt, body}) {
     return (
     <div className="note-detail">
-        <h3 className='note-detail-title'
+        <h3 className='mt-4'
         >
           {title}
         </h3>
 
-        <p className='note-detail-createdAt'
+        <p className='mt-4'
         >
           {showFormattedDate(createdAt)}
         </p>
 
-        <p className='note-detail-body'
+        <p className='mt-4'
         >
           {body}
         </p> 

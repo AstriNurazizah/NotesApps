@@ -53,11 +53,11 @@ class RegisterInput extends React.Component {
  
   render() {
     return (
-      <form onSubmit={this.onSubmitHandler} className='register-input'>
-        <input className='text' type='text' placeholder="Nama" value={this.state.name} onChange={this.onNameChange} />
-        <input className='email' type='email' placeholder="Email" value={this.state.email} onChange={this.onEmailChange} />
-        <input className='password' type='password' placeholder="Password" autoComplete='current-password' value={this.state.password} onChange={this.onPasswordChange} />
-        <button className='regist'>Register</button>
+      <form onSubmit={this.onSubmitHandler} className='outline-none rounded-md py-2 px-4 font-medium flex flex-col items-center'>
+        <input className='text-lg mt-4 bg-transparent mb-6 py-2 px-10 rounded-lg border border-solid mx-auto' type='text' placeholder="Nama" value={this.state.name} onChange={this.onNameChange} />
+        <input className='text-lg mt-4 bg-transparent mb-6 py-2 px-10 rounded-lg border border-solid mx-auto' type='email' placeholder="Email" value={this.state.email} onChange={this.onEmailChange} />
+        <input className='text-lg mt-4 bg-transparent mb-6 py-2 px-10 rounded-lg border border-solid mx-auto' type='password' placeholder="Password" autoComplete='current-password' value={this.state.password} onChange={this.onPasswordChange} />
+        <button className='text-lg mt-4 bg-transparent mb-6 py-2 px-10 rounded-lg border border-solid mx-auto'>Register</button>
       </form>
     )
   }

@@ -12,7 +12,7 @@ function NoteList({ notes, onDelete, onArchive, unArchive }) {
   }
 
   return (
-    <div className="notes-list">
+    <div className="mt-8 grid grid-cols-1 gap-4 lg:grid-cols-4 px-4 py-2">
     { 
         notes.map((note) => (
           <NoteItem 

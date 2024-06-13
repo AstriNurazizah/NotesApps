@@ -17,10 +17,10 @@ function LoginPage({ loginSuccess }) {
   }
  
   return (
-    <section className='login-page'>
-      <h2 className='log'>{locale === 'id' ? 'MASUK' : " LOG IN "}</h2>
+    <section className='border border-on-surface rounded-md p-3 px-4 font-extralight '>
+      <h2 className='text-center p-5 font-semibold'>{locale === 'id' ? 'MASUK' : " LOG IN "}</h2>
       <LoginInput login={onLogin} />
-      <p>{locale === 'id' ? 'Belum punya akun ? ' : "Doesn't have an account ? "}<Link to="/register">{locale === 'id' ? 'Daftar di sini' : 'Register here' }</Link></p>
+      <p className='text-center my-5 mx-auto'>{locale === 'id' ? 'Belum punya akun ? ' : "Doesn't have an account ? "}<Link to="/register">{locale === 'id' ? 'Daftar di sini' : 'Register here' }</Link></p>
     </section>
   );
 }

@@ -8,7 +8,7 @@ function ItemTitle({ id, title }) {
     to={`/notes/${id}`}
     title={title}
     >
-    <h3 className="item-title"
+    <h3 className="my-1"
     >
         { title }
     </h3>

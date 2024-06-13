@@ -10,7 +10,7 @@ import UnArchive from './unArchive';
 
 function NoteItem({ id, title, createdAt, body,archived, onDelete, onArchive, unArchive}) {
   return (
-    <article className="note-item">
+    <article className="">
     <div className="note-item-content">
       <ItemTitle
           id={id}
@@ -23,7 +23,7 @@ function NoteItem({ id, title, createdAt, body,archived, onDelete, onArchive, un
           body={body}
         />
 
-<div className='note-item-action'>
+<div className='flex mt-4'>
                   {
                       archived ?
                         <UnArchive unArchive={unArchive} id={id} />

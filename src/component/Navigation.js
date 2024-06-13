@@ -13,12 +13,12 @@ function Navigation({ logout}) {
   return (
     <nav className='navigation'>
     {
-            <ul className='nav-item'>
-              <li onClick={toggleTheme}>{theme === 'light' ? <FiMoon size={32} /> : <FiSun size={32} />}</li>
-              <li onClick={toggleLocale}><MdGTranslate size={32}/></li>
-              <li><Link to="/archive"><FiArchive/></Link></li>
-              <li><Link to="/add"><FiPlusCircle/></Link></li>
-              <li onClick={logout}><FiLogOut size={30}/></li>
+            <ul className='list-none p-0 m-0'>
+              <li className="inline-block text-2xl mx-2" onClick={toggleTheme}>{theme === 'light' ? <FiMoon size={32} /> : <FiSun size={32} />}</li>
+              <li className="inline-block text-2xl mx-2" onClick={toggleLocale}><MdGTranslate size={32}/></li>
+              <li className="inline-block text-3xl mx-2"><Link to="/archive"><FiArchive/></Link></li>
+              <li className="inline-block text-3xl mx-2"><Link to="/add"><FiPlusCircle/></Link></li>
+              <li className="inline-block text-2xl mx-2" onClick={logout}><FiLogOut size={30}/></li>
             </ul>
     }
       </nav>

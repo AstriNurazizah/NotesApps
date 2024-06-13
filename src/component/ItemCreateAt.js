@@ -5,7 +5,7 @@ import { showFormattedDate } from '../utils';
 function ItemcreatedAt({ createdAt }) {
   return (
     <div>
-        <p className="item-createdAt">
+        <p className="text-sm my-1">
             { showFormattedDate(createdAt) } 
         </p>
     </div>

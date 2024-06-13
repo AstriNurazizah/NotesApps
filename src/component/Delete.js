@@ -4,7 +4,9 @@ import {AiOutlineDelete } from 'react-icons/ai';
 
 
 function Delete({ id, onDelete }) {
-  return <button className='item-delete' onClick={() => onDelete(id)}><AiOutlineDelete/></button>
+  return <button className='flex items-center justify-center text-4xl 
+  border-0 w-12 h-12 rounded-full bg-[#153448] text-[#948979] p-2 
+  cursor-pointer' onClick={() => onDelete(id)}><AiOutlineDelete/></button>
 }
 
 Delete.propTypes = {

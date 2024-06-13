@@ -38,22 +38,22 @@ class NoteInput extends React.Component{
     render(){
         return(
             
-            <form className='note-input' onSubmit={this.onSubmitEventHandler}>
+            <form className='border border-solid rounded-md p-2 font-medium ' onSubmit={this.onSubmitEventHandler}>
                 <input type="text" 
-                className='note-input-title' 
+                className='text-lg mt-8 bg-transparent block w-80 p-2 rounded border border-solid mx-auto' 
                 placeholder="Judul ..." 
                 value={this.state.title} 
                 onChange={this.onTitleChangeEventHandler} 
 
                 />
                 <textarea type="text" 
-                className='note-input-body' 
+                className='text-lg mt-8 bg-transparent block w-80 p-2 rounded border border-solid mx-auto mb-8' 
                 placeholder="Tulis Catatan ... " 
                 value={this.state.body} 
                 onChange={this.onBodyChangeEventHandler} 
 
                 />
-                <button type="submit">
+                <button type="submit" className='text-lg mt-4 bg-transparent mb-6 py-2 px-10 rounded-lg border border-solid mx-auto flex justify-center items-center'>
                 Submit
                 </button>
             </form>

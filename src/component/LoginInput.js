@@ -19,10 +19,10 @@ function LoginInput ({login}) {
   }
 
     return (
-      <form onSubmit={onSubmitHandler} className='login-input'>
-        <input className='email' type='email' placeholder='Email' value={email} onChange={onEmailChangeHandler} />
-        <input className='password' type='password' placeholder='Password' value={password} onChange={onPasswordChangeHandler} />
-        <button className='login'>{locale === 'id' ? 'Masuk' : 'Log in'}</button>
+      <form onSubmit={onSubmitHandler} className='outline-none rounded-md py-2 px-6 font-medium flex flex-col items-center '>
+        <input className='text-lg mt-4 bg-transparent mb-6 py-2 px-10 rounded-lg border  border-solid mx-auto' type='email' placeholder='Email' value={email} onChange={onEmailChangeHandler} />
+        <input className='text-lg mt-4 bg-transparent mb-6 py-2 px-10 rounded-lg border border-solid mx-auto' type='password' placeholder='Password' value={password} onChange={onPasswordChangeHandler} />
+        <button className='text-lg mt-4 bg-transparent mb-6 py-2 px-10 rounded-lg border border-solid mx-auto'>{locale === 'id' ? 'Masuk' : 'Log in'}</button>
       </form>
     );
   }

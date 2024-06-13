@@ -16,10 +16,10 @@ function RegisterPage() {
   }
  
   return (
-    <section className='register-page'>
-      <h2 className='regis'>{locale === 'id' ? 'DAFTAR ' : 'REGISTER'}</h2>
+    <section className='border rounded-md p-3 px-4 font-extralight '>
+      <h2 className='text-center p-5 font-semibold'>{locale === 'id' ? 'DAFTAR ' : 'REGISTER'}</h2>
       <RegisterInput register={onRegisterHandler} />
-      <p>{locale === 'id' ? 'Kembali ke ' : 'Back to '}<Link to="/">{locale === 'id' ? 'Masuk' : 'Login'}</Link></p>
+      <p className='text-center my-5 mx-auto'>{locale === 'id' ? 'Kembali ke ' : 'Back to '}<Link to="/">{locale === 'id' ? 'Masuk' : 'Login'}</Link></p>
     </section>
   )
 }

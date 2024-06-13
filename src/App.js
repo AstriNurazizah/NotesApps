@@ -81,9 +81,9 @@ function App() {
   return (
     <ThemeContext.Provider value={themeContextValue}>
     <LocaleContext.Provider value={localeContextValue}>
-      <div className='app-container'>
-        <header className='nav-item'>
-          <h1 id='background-text' className='nav-item'><Link to='/'>{locale === 'id' ? 'Aplikasi Catatan' : 'Notes Application'}</Link></h1>
+      <div className='min-h-screen transition-all duration-500 ease-in-out'>
+        <header className='relative flex items-center justify-center border-b p-4'>
+          <h1 id='background-text' className='flex-1 text-3xl font-bold'><Link to='/'>{locale === 'id' ? 'Aplikasi Catatan' : 'Notes Application'}</Link></h1>
           <Navigation logout={onLogout} authed={authedUser} /> 
         </header>
         <main>
